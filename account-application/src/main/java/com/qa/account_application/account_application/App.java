@@ -7,7 +7,6 @@ public class App
 {
     public static void main(String[] args) {
         System.out.println( "Hello World!" );
-        System.out.println( "Hello World!" );
 
         Account a = new Account("Sam", "Vivers", 111);
         Account b = new Account("Bob", "Rivers", 142);
