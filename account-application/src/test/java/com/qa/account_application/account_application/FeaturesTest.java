@@ -22,14 +22,16 @@ public class FeaturesTest {
 	
 	@Test
 	public void test1() {
-		assertEquals(1,Features.cycle("Sam"));
+		assertEquals(1, Service.cycle("Sam"));
 	}
 	@Test
 	public void test2() {
-		assertEquals(2,Features.cycle("Bob"));
+		assertEquals(2, Service.cycle("Bob"));
 	}
 	@Test
 	public void test3() {
-		assertEquals(0,Features.cycle("456&%GHdfg"));
+		Account a446 = new Account("Bob", "Menkins", 446);
+		Service.add(a446);
+		assertEquals(3, Service.cycle("Bob"));
 	}
 }
