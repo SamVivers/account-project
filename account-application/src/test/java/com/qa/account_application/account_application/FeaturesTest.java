@@ -28,4 +28,8 @@ public class FeaturesTest {
 	public void test2() {
 		assertEquals(2,Features.cycle("Bob"));
 	}
+	@Test
+	public void test3() {
+		assertEquals(0,Features.cycle("456&%GHdfg"));
+	}
 }
