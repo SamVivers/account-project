@@ -29,5 +29,9 @@ public class App
         Gson gson = new Gson();
         String json = gson.toJson(lloyds.m1);
         System.out.println(json);
+        
+        Map m2 = new HashMap();
+        m2 = gson.fromJson(json, HashMap.class);
+        System.out.println(m2);
     }
 }
